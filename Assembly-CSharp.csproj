@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5a83c6f8-ea12-e4d6-7c26-535c65aa50e9}</ProjectGuid>
+    <ProjectGuid>{8ee439cb-93d9-595b-11f9-62f85996ae40}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -37,12 +37,14 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Personaje\PersonajeMovimiento.cs" />
-     <Compile Include="Assets\Scripts\Personaje\VidaBase.cs" />
-     <Compile Include="Assets\Scripts\Personaje\PersonajeAnimaciones.cs" />
-     <Compile Include="Assets\Scripts\Personaje\PersonajeVida.cs" />
-     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
      <Compile Include="Assets\Scripts\Personaje\Personaje.cs" />
+     <Compile Include="Assets\Scripts\Personaje\VidaBase.cs" />
      <Compile Include="Assets\Scripts\Managers\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\Personaje\PersonajeAnimaciones.cs" />
+     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+     <Compile Include="Assets\Scripts\Personaje\PersonajeVida.cs" />
+     <Compile Include="Assets\Scripts\Extras\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Personaje\PersonajeMana.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -296,10 +298,10 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -647,121 +649,121 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="VSSettingsProvider">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>K:/Unity Projects/Curso RPG/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>K:/Unity Projects/CursoRPG/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

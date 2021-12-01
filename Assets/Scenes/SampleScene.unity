@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 639958271}
   - component: {fileID: 639958272}
   - component: {fileID: 639958273}
+  - component: {fileID: 639958275}
   m_Layer: 0
   m_Name: GreenNinja
   m_TagString: Untagged
@@ -778,6 +779,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5539e3fb9a6974eaeef3df8fc7c0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &639958275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639958265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291b0fae6ad426747b800ea4e5e38f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manaInicial: 50
+  manaMax: 50
+  regeneracionPorSegundo: 1
 --- !u!1 &772352086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,7 +1350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaPlayer: {fileID: 29986551}
+  manaPlayer: {fileID: 809585242}
   vidaTMP: {fileID: 772352088}
+  manaTMP: {fileID: 779713728}
 --- !u!4 &1404284637
 Transform:
   m_ObjectHideFlags: 0
