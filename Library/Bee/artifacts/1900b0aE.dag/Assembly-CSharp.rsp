@@ -346,8 +346,10 @@
 "Assets/Scripts/Managers/UIManager.cs"
 "Assets/Scripts/Personaje/Personaje.cs"
 "Assets/Scripts/Personaje/PersonajeAnimaciones.cs"
+"Assets/Scripts/Personaje/PersonajeExperiencia.cs"
 "Assets/Scripts/Personaje/PersonajeMana.cs"
 "Assets/Scripts/Personaje/PersonajeMovimiento.cs"
+"Assets/Scripts/Personaje/PersonajeStats.cs"
 "Assets/Scripts/Personaje/PersonajeVida.cs"
 "Assets/Scripts/Personaje/VidaBase.cs"
 -langversion:8.0
