@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tilemap_Piso
+    uniqueID: 971396461
+    locked: 0
+  - name: Personaje
+    uniqueID: 2718241949
+    locked: 0

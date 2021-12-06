@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Personaje\PersonajeMovimiento.cs" />
+     <Compile Include="Assets\Scripts\Extras\AtributoButton.cs" />
      <Compile Include="Assets\Scripts\Personaje\PersonajeMana.cs" />
      <Compile Include="Assets\Scripts\Personaje\Personaje.cs" />
      <Compile Include="Assets\Scripts\Personaje\VidaBase.cs" />
@@ -47,7 +48,6 @@
      <Compile Include="Assets\Scripts\Personaje\PersonajeExperiencia.cs" />
      <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
      <Compile Include="Assets\Scripts\Personaje\PersonajeVida.cs" />
-     <Compile Include="Assets\Scripts\Extras\AtributoButton.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
